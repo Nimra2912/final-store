@@ -1,0 +1,181 @@
+body{margin: 0; box-sizing: border-box; background-color: #eee;
+    font-family: 'poppins',sans-serif; letter-spacing: 1px; 
+}
+.header{
+     position: fixed;
+     z-index: 1111;
+     width: 100%;
+     top: -0.15rem;}
+
+.header-1{ padding: 0.65rem 1.5em; display: flex; justify-content:space-between;
+     height: 3rem; background-color: #110404; 
+     color: #eee;
+     cursor: pointer;}
+
+.search-icon{ color: #eee;
+     position: relative;}
+
+.header-search{
+     width: 6rem; position: absolute;
+     display: inline;
+     height:2rem; border: none; 
+     margin: 0.5rem; outline: none;
+     border-radius: 4px;}
+
+
+.header-search:focus, .header-select:focus{ border: 1px solid #D0CA2F;
+box-shadow:  1px 2px 5px #D0CA2F; width:10rem ;
+transition: all 0.5s;}
+
+.header-icon{ font-size: 1rem;
+text-decoration: none;
+padding-right: 1rem ;
+margin-top: 1rem;}
+
+.header-icon:hover{
+     transform: scaleY(1.2);}
+
+.header-icons{ margin-top: 1rem;}
+.header-name{
+    text-decoration: none;
+    color:#D0CA2F;
+    font-size: 1.8rem;
+    font-weight: 600; letter-spacing: 1.8px;
+}
+H3{
+     color: #d1cc41;
+}
+.header-name:hover{
+     transition: all 0.3s;
+     transform: rotate(360);
+     letter-spacing: 3px;
+     color: #d1cc41;
+}
+.header-2{
+     background-color: #cfd0d1;
+     display: flex;
+     height: 2rem;
+     padding-top: 1rem;
+     padding-left:5rem ;
+     padding-right: 5rem;
+     justify-content: space-around;
+}
+.header2-items{ font-weight: 600;
+     text-decoration: none;
+     text-transform: uppercase;
+     color: #110404;
+     padding-bottom: 0.5rem;
+}
+.header2-items:hover{
+     border-top: 2px solid #D0CA2F;
+     margin-bottom: 4PX;
+  transform: scale(1.2);
+  transition: all 0.4s}
+::placeholder{
+     color: #110404;
+     font-weight: 600;
+     letter-spacing: 2px;
+     padding: 10px;}
+
+i:hover{
+     border: 1px solid #D0CA2F; 
+     transform: scale(1.2);
+     translate: border 3s;
+     transition: all 0.4s;}
+
+.footer{color: #eee;
+    margin: 2rem;
+    padding: 1rem;
+    line-height: 2;
+     display: flex;
+     justify-content: space-around;
+     border-bottom: 2px solid #F77378;
+}
+.link{margin-left: 0.5rem;
+     text-decoration: none;
+     text-transform: capitalize;
+     color: #eee;
+     margin-bottom: 5px;}
+
+.link:hover{
+     border-bottom: 2px groove #D0CA2F;
+     transform: scaleX(1.2);
+     transition: all 0.3s;}
+
+     .links{margin-left: 0.5rem;
+          text-decoration: none;
+          display: block;
+          text-transform: capitalize;
+          color: #eee;
+          margin-bottom: 5px;}
+     
+     .links:hover{
+          border-bottom: 2px groove #D0CA2F;
+          transform: scaleX(1.2);
+          transition: all 0.3s;}
+
+.icon{
+     text-decoration: none; 
+     margin-left: 2rem;
+     color: #D0CA2F;
+     border-top: 2px solid #D0CA2F;
+     padding: 7px;
+     border-radius: 50%;
+     font-size: 1.5rem; }
+ .detail-p{
+     display: block;
+ }
+ .icons{
+     display: flex;
+     justify-content: center;}
+
+ .icon:HOVER{
+     transform: scale(1.2);
+     border: 2px solid #D0CA2F;
+     transition: all 0.3s;}
+
+footer{ background-color: #110404;}
+.copyright{
+color: #eee; text-align: center!important; font-weight: lighter !important;
+}
+/* media queries */
+@media (max-width: 970px){
+     .header-2{opacity: 0;}
+}
+
+@media (max-width: 765px){ 
+.footer{display: block;
+line-height: 2;}
+.links{display: inline-block;
+     width: 26%;
+     color: #F77378;}
+.header-name{text-align: center;
+          font-size: 1.2rem;
+     margin-left: 3rem;}
+.header-search{ height: 1.3rem;
+width: 5rem;}
+.header-search:hover{
+     width: 5.5rem;
+}
+.footer{
+     margin: 1rem;
+}
+}
+@media (max-width: 600px){ 
+     .header-icon{ font-size: 0.5rem;
+          text-decoration: none;
+          padding-right: 0.25rem ;}
+     .header-1{ padding: 0.25rem;}
+     .icon{padding: 5px;
+          font-size: 1rem;}
+          .detail-p{
+               display:inline-block;
+               width: 30%;
+           }
+           .signs{ margin: auto 0rem;}
+}
+@media (max-width: 430px){ 
+     .header-name{
+          font-size: 1rem;
+     margin-top: 0.65rem;}
+}

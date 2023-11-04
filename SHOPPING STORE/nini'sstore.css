@@ -1,0 +1,277 @@
+/* #ffaf3bpastel : #004b41   yellow:  */
+body{margin: 0; box-sizing: border-box;
+background-color: #AAC4BF; font-family: "Ubuntu", sans-serif;
+cursor: pointer;
+}
+
+.line{padding-top: 8rem; color:#110404;}
+
+.mainpage{
+    margin: auto 4rem;
+    background-color: #F77378;
+    height: 70vh;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+   }
+   
+   .online{
+    text-decoration: none;
+    color: #110404;
+   }
+   .online:hover{
+    border-bottom: 1px solid #110404;
+   }
+   .image{
+    height:300px;
+     width:350px;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%); 
+  }
+  .sale, .percent{
+    font-size: 3rem; color: #D0CA2F;
+  }
+.btn-1{ 
+  border: 1px groove #F77378;
+  color: #110404;
+   font-weight: 600; border-radius: 2px;
+   padding: 0.5rem;  background-color:#F77378 ;
+     font-size: 1.25rem;cursor: pointer;}
+
+.btn-1:hover{  transition: all 0.1s;
+  box-shadow:  1px 2px 5px #D0CA2F;
+border: 1px solid #D0CA2F;} 
+
+.heading{ text-transform: capitalize; color:#110404 ; cursor: pointer;
+animation-name: movetoleft; margin-left: 5rem; 
+animation-duration: 3s;
+margin-top:2rem;
+padding-bottom: 3rem;
+letter-spacing: 1.5px;
+text-align: center;}
+
+.heading:hover{ 
+  transform: scale(1.2);
+  padding-bottom: 2PX; 
+transition: ease-out 0.4s; }
+
+i{ margin-top: 10px;}
+
+span{ display: inline-block; 
+  line-height: 2;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  opacity: 0;
+  filter: blur(4px);}
+   
+   span:nth-child(1) {
+     animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(2) {
+     animation: fade-in 1s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(3) {
+     animation: fade-in 1s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(4) {
+     animation: fade-in 1s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(5) {
+     animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(6) {
+     animation: fade-in 1s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(7) {
+     animation: fade-in 1s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(8) {
+     animation: fade-in 1s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   span:nth-child(9) {
+     animation: fade-in 1s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);} 
+   span:nth-child(10) {
+     animation: fade-in 1s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);}
+   @keyframes fade-in { 100% {opacity: 1; filter: blur(0); } }
+/* dont know yet */
+   @keyframes movetoleft{
+    0% { opacity:0; transform:translateX(-100%)}
+    80% {transform: translateX(20px);}
+   100% {opacity:1; transform: translate(0);}}
+
+@keyframes movetoright{ 0% { opacity:0;  transform:translateX(100%)}
+80% {transform: translateX(-20px);}
+100% {opacity:1;  transform: translate(0);}}
+
+@keyframes products{
+    from{height: 0; width: 0;}
+    to{ height: 250px; width: 250px;}
+}
+/* PRODUCTS */
+.productss{margin-top: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;}
+
+.product-img1,
+.product-img2,
+.product-img3,
+.product-img4,
+.product-img5,
+.product-img6{
+margin: 1rem;
+height: 20rem;
+width: 20rem;
+margin-bottom: 8rem;
+padding: 1rem;
+}
+ 
+.product-img1:hover,
+.product-img2:hover,
+.product-img3:hover,
+.product-img4:hover,
+.product-img5:hover,
+.product-img6:hover{
+background-color: #F77378;
+border-radius: 10%;
+width: 18rem;
+transition: all 0.5s;}
+
+.product-heading{
+  color: #110404;
+  text-align: center;
+  top: -12rem;
+  position:relative;
+}
+.product-text{
+  color: #110404;
+  text-align: center;
+  top: -13rem;
+  position:relative;
+}
+
+.product-image{
+  height: 300px;
+  width: 300px;
+  top: -9rem;
+  position: relative;
+}
+.product-btn{
+text-decoration: none;
+text-transform: uppercase;
+color: #110404;
+text-align: center;
+top: -12rem;
+width: 100%;
+position:relative;
+background-color: #D0CA2F;
+padding: 0.75rem;
+ }
+
+ .product-btn:hover{background-color:rgb(221, 220, 220); 
+font-weight: 600;}
+ .btn{
+  display: flex;
+  justify-content: center;
+}
+
+
+/* 1000 */
+@media (max-width: 1000px){
+  .image{
+    margin-top: 2rem;
+    margin-left: 5rem;}
+
+    .line{padding-top: 5rem;}
+
+    .mainpage{
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 9rem;
+    }
+}
+/* 950 */
+@media (max-width: 950px){ 
+  .mainpage{margin-top: 5rem;}
+
+  .image{
+ height: 265px;
+width: 295px;
+margin-left: 2rem;}
+}
+/* 850 */
+@media (max-width: 850px){ 
+  .mainpage{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 65vh;
+  }
+  .image{
+ height: 240px;
+width: 259px;
+margin-left: 0.5rem;}
+.line{
+font-size: 0.25rem;
+}
+}
+/* 760 */
+@media (max-width: 760px){ 
+  .mainpage{
+    margin-left: 3px;
+    margin-right: 3px;}
+    .sale, .percent{
+      font-size: 2rem;
+    }
+.image{
+ height: 150px;
+width: 160px;
+margin-left: 5px;}
+.line{font-size: 5px;}
+.product-img1,
+.product-img2,
+.product-img3,
+.product-img4,
+.product-img5,
+.product-img6{
+margin: 1rem;
+height: 14rem;
+width: 14rem;
+margin-bottom: 5rem;
+padding: 1rem;
+}
+.product-image{
+  height: 200px;
+  width: 190px;}
+  .product-text{
+    font-size: 10px;
+  }
+  .product-btn, .product-heading{
+    font-size: 12px; }
+  .btn{ size: 12px;}
+}
+/* 600 */
+@media (max-width: 600px){ 
+  .mainpage{top:1rem;
+    position:relative;
+    height: 60vh;
+    padding-top: 2rem;
+    margin-left: 2px;
+    margin-right: 2px;}
+    .line{padding:0; margin-top: 3rem; text-align: center;}
+    span{ font-size: medium;}
+    .image{ margin-top: 4rem;}
+
+    .product-image{top: -7rem;}
+      .product-text{top: -10rem;
+      }
+.product-heading{top: -9rem; }
+.product-btn, .btn{ top: -9.5rem;}
+      .product-image{
+        height: 200px;
+        width: 190px;}
+}
+@media (max-width: 430px){
+  .mainpage{height: 50vh;
+    top: 0;
+  padding-left: 7px;
+padding-right: 10px;}
+  span{ font-size: small;}
+  .sale, .percent{
+    font-size: 1.5rem;
+  }
+ }

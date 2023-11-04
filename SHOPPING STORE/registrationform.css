@@ -1,0 +1,107 @@
+body{ cursor: pointer;
+    margin: 0; padding: 0; box-sizing: border-box; color:#110404;
+}
+.home{
+    color: #D0CA2F;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 4rem auto 2rem 2rem;
+    font-weight: 900;}
+
+.page{
+    background-image:linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 1, 0.9)),url(./images/mainbg.jpeg) ;
+    background-size: cover; height: 100vh;}
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.form-1{ padding: 3.5rem;
+    background-color: #eee;}
+    .input{
+        border: none;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        margin-bottom: 0.75rem;
+        outline: none;
+        border-bottom: 1px groove #D0CA2F;
+        padding: 0.5rem;
+        width: 90%;
+    }
+    ::placeholder{
+        color: #110404;
+    }
+    .input:focus{
+        box-shadow:  1px 2px 5px #D0CA2F;
+    }
+    ::placeholder {
+        color: grey;
+      }
+    .btn-1{
+        text-decoration: none;
+        color: #110404 ;
+        background-color:#F77378 ;
+        padding: 0.5REM; width: 60%;
+        border-radius: 10px;
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .btn-1:hover{
+        box-shadow:  1px 2px 5px #D0CA2F;
+      border: 1px solid #D0CA2F;
+        transition: background-color .3s ease-in-out;
+    }
+  .btn{
+    display: flex; justify-content: center;
+  }
+    .login{ font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #110404;
+    padding: 4px;
+    letter-spacing: 1px;
+}
+.login:hover{
+    border-bottom: 2px solid #D0CA2F;
+   transform: scale(1.2);
+   color: #D0CA2F;
+}
+.line{ display: inline; color: #FE46A5;}
+.heading{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.para{
+    font-size: 1.15rem;  text-align: center;
+}
+.icon{
+    text-decoration: none; 
+    margin-left: 0.5rem;
+    color: #110404;
+    border-top: 2px solid #F77378;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 1.5rem; 
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.icon:HOVER{
+    transform: scale(1.2);
+    border: 2px solid #F77378;
+}
+.forget{
+    font-size: 1.1rem ;
+    text-transform: uppercase;
+}
+.forget:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 1000px){
+    .form-1{ padding: 2.5rem;}
+}
